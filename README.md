@@ -11,6 +11,7 @@ Note:  You will have to copy this sql and adjust the OPRID, LASTUPDTTM
 and PROJECTNAMES criteria manually - a global replace with an editor should do the trick
 those criteria are EXACTLY the same on each object type.
 
+```
 select RECNAME, RECDESCR, LASTUPDOPRID, LASTUPDDTTM 
 from PSRECDEFN M
 
@@ -46,7 +47,7 @@ AND OBJECTTYPE = 0
 AND M.RECNAME = PSPROJECTITEM.OBJECTVALUE1
 )
 ;
-
+```
 
 Typical usage
 -------------
