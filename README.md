@@ -93,7 +93,7 @@ Contributing
 
 This repo is a bit unusual - the SQL is generated, and the generator is part of a larger framework that is not on Github yet.  This means that forking it, editing the whole script by hand and then doing a pull request isn't going to work.
 
-- If you want another database supported, say DB2, take a few audit queries, say Records and Application Engine Peoplecode (objecttype = 43) and make sure you can run it in your SQL utility.  Then, once that works, open and issue to let me know and I will add support for DB2 audit sql generation.
+- If you want another database supported, say DB2, take a few audit queries, say Records and Application Engine Peoplecode (objecttype = 43) and make sure you can run it in your SQL utility.  Then, once that works, open an issue to let me know, paste in your adjusted queries and I will use them to add support for DB2 audit sql generation.
 
 - If you find a problem with a given objecttype, or if you want one of the missing objecttypes covered, again, write the query for it, make it work and tell me about it.
 
