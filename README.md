@@ -1,6 +1,9 @@
 # psproject_check
 Checks that all your changed objects are included in your delivery PeopleSoft Project.
 
+How to use it
+-------------
+
 Best explained directly via SQL, using the Oracle version in this case:
 
 
@@ -45,6 +48,8 @@ AND M.RECNAME = PSPROJECTITEM.OBJECTVALUE1
 ;
 
 
+Typical usage
+-------------
 
 The most common use follows:
 
@@ -55,9 +60,23 @@ The most common use follows:
 
 When you first run the SQL, assuming that both projects start out empty, you should see all your recent changes in the SQL results.
 
-Open up Application Designer and start adding objects that you do care about to MY_DELIV.  
+Open up Application Designer and start adding objects that you do care about to MY_DELIV.  You shouldn't have to insert related objects in most cases.
 
 And, as you encounter changes you DON'T want, just add those objects
 to MY_IGNORE.
 
 Rinse and repeat.
+
+
+What do you gain?
+-----------------
+
+By using this, you avoid getting errors in your downstream environment because you forgot something. And, because you can now
+deliver only what has **really** changed, you will be able to track exactly what project first introduced changes to an object.
+
+If you then tie projects to a formal change delivery tracking documentation, you should be able to tie those changes to the business requirements (or bug fixes) that motivated them.
+
+
+
+
+
