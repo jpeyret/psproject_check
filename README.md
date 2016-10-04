@@ -53,16 +53,17 @@ Typical usage
 
 The most common use follows:
 
-- change the two delivered project name to 
+- change the two delivered project name to:
+
 	- The PROJECTNAME for the project you WANT to deliver.  Let's say MY_DELIV, this is the project you want to Upgrade/Copy to a new database, file.
 
-	- A generic projectname, like MY_IGNORE, that tracks all the objects you don't care about, like Save As... backups, mistakenly saved objects, etc...
+	- A generic projectname, like `MY_IGNORE`, that tracks all the objects you don't care about, like Save As... backups, mistakenly saved objects, etc...
 
-When you first run the SQL, assuming that both projects start out empty, you should see all your recent changes in the SQL results.
+- When you first run the SQL, assuming that both projects start out empty, you should see all your recent changes in the SQL results.
 
-Open up Application Designer and start adding objects that you do care about to MY_DELIV.  You shouldn't have to insert related objects in most cases.
+- Open up Application Designer and start adding objects that you do care about to MY_DELIV.  You shouldn't have to insert related objects in most cases.
 
-And, as you encounter changes you DON'T want, just add those objects
+- And, as you encounter changes you DON'T want, just add those objects
 to MY_IGNORE.
 
 Rinse and repeat.
